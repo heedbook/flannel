@@ -1,7 +1,7 @@
 .PHONY: test e2e-test cover gofmt gofmt-fix license-check clean tar.gz docker-push release docker-push-all flannel-git
 
 # Registry used for publishing images
-REGISTRY?=quay.io/coreos/flannel
+REGISTRY?=cowregistry.azurecr.io/flannel
 
 # Default tag and architecture. Can be overridden
 TAG?=$(shell git describe --tags --dirty)
