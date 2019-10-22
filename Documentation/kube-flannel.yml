@@ -104,7 +104,7 @@ spec:
       serviceAccountName: flannel
       initContainers:
       - name: install-cni
-        image: cowregistry.azurecr.io/flannel:latest
+        image: cowregistry.azurecr.io/flannel:v0.9.0-53-gd6081970-dirty-amd64
         command:
         - cp
         args:
@@ -118,7 +118,7 @@ spec:
           mountPath: /etc/kube-flannel/
       containers:
       - name: kube-flannel
-        image: cowregistry.azurecr.io/flannel:latest
+        image: cowregistry.azurecr.io/flannel:v0.9.0-53-gd6081970-dirty-amd64
         command:
         - /opt/bin/flanneld
         args:
