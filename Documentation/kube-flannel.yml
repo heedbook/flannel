@@ -150,3 +150,5 @@ spec:
         - name: flannel-cfg
           configMap:
             name: kube-flannel-cfg
+      imagePullSecrets: 
+      - name: regcred
